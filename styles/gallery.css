@@ -107,6 +107,31 @@ section.gallery {
   }
 }
 
+@media (max-width: 768px) {
+  section.gallery {
+    padding-inline: 1rem;
+
+    & .content {
+      grid-template-areas: "A" "B" "C" "D";
+      gap: 1.5rem;
+    }
+
+    & figure {
+      border-radius: 1.5rem;
+
+      & > img {
+        height: 20rem;
+      }
+    }
+  }
+}
+
+@media (hover: none) {
+  section.gallery figcaption {
+    transform: translateY(0);
+  }
+}
+
 @keyframes image-appear {
   from {
     opacity: 0;

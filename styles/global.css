@@ -24,8 +24,19 @@
   --text-xl: 4rem;
 }
 
+@media (max-width: 768px) {
+  :root {
+    --text-lg: 2rem;
+    --text-xl: 2.5rem;
+  }
+}
+
 html, button {
   font: 500 1rem/1.5 var(--ff-base);
+}
+
+body {
+  overflow-x: clip;
 }
 
 h1, h2 {
